@@ -1,0 +1,50 @@
+.sectionThree{
+    margin-top: -300px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.keyFeature {
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(171, 172, 174);
+    color: rgb(122, 124, 127);
+    font-size: 18px;
+}
+
+.section3-heading h1 {
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+
+.section3-boxes {
+    background-color: rgb(241, 241, 241);
+    padding: 40px 30px;
+    border-radius: 7px;
+    min-height: 380px;
+}
+
+.section3-logos {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3-logos img {
+    height: 100%;
+    width: 100%;
+}
+
+.section3-logos-content {
+    color: rgb(99, 101, 104);
+}
+
+@media(max-width:993px){
+    .sectionThree{
+    margin-top: 0px;
+    background-color: #fff;
+    z-index: 0;
+}
+}

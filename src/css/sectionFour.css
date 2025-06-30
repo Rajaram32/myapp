@@ -1,0 +1,125 @@
+:root {
+    --slide-count: 5;
+    --slide-height: 300px;
+    --slide-width: 300px;
+    --gap: 20px;
+    --time: 40s;
+}
+
+
+.sectionFour {
+    min-height:650px;
+    width: 100%;
+    /* background-color: green; */
+    background-image: url('../img/section4//bgIMG.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionFour::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #1b1b1b;
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 50px;
+}
+
+.section4-main {
+    color: white;
+
+}
+
+.section4-Heading h1 {
+    font-size: 60px;
+}
+
+
+.section4-Details p {
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.boxx {
+    position: relative;
+}
+
+.rollingImgBox {
+    gap: var(--gap);
+    animation: scrolling var(--time) linear infinite;
+    /* background-color: green; */
+
+    top: 0px;
+}
+
+.imgBox {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * var(--slide-count) * (var(--slide-width) + (var(--gap)*2))));
+    }
+
+}
+
+.rollingImg {
+    height: var(--slide-height);
+    width: var(--slide-width);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.rollingImgBox:has(.rollingImg:hover) {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@media(max-width:2560px){
+    :root {
+    --slide-count: 5;
+    --slide-height: 600px;
+    --slide-width: 500px;
+    --gap: 25px;
+    --time: 40s;
+}
+}
+
+@media(max-width:1440px){
+    :root {
+    --slide-height: 300px;
+    --slide-width: 250px;
+    --gap: 20px;
+}
+
+}
+@media(max-width:1024px){
+    :root {
+    --slide-height: 250px;
+    --slide-width: 200px;
+    --gap: 20px;
+}
+}

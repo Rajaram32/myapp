@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ******************** Header1 ************************ */
+
+
+.header1 {
+    background-color: #262626;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0px 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.headerLogo1 {
+    height: 20px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLogo1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.buynowBt1 {
+    background-color: #82b440;
+    color: white;
+    font-size: 14px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.buynowBt1:hover {
+    background-color: rgb(122, 169, 60);
+}

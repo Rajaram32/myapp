@@ -1,0 +1,47 @@
+.rightBox {
+    background-color: white;
+    position: fixed;
+    right: 0px;
+    top: 290px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 5px 0px 0px 5px;
+    height: 100px;
+    width: 50px;
+    box-shadow: 2px 4px 24px -1px rgba(161, 161, 161, 0.55);
+}
+
+.rb1 {
+    /* background-color: rgb(57, 235, 12); */
+    height: 27px;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rb1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.rb2 {
+    /* background-color: rgb(199, 24, 24); */
+    height: 27px;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.rb2 img {
+    height: 100%;
+    width: 100%;
+}
