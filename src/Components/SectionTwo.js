@@ -15,7 +15,7 @@ const SectionTwo = () => {
         <section  className='sectionTwo'>
             <div className="sectionTwo-main">
                 <div className="container sectionTwo-content">
-                <div  id='demo' className="row row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                <div  id='demo' className="row row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gy-5">
                     <div className="col">
                         <div className="imageContainer"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true">
                             <div className="imageBox">
